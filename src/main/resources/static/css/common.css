@@ -1,0 +1,284 @@
+/* Links */
+a, a:focus, a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Custom default button */
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+	color: #333;
+	text-shadow: none; /* Prevent inheritance from `body` */
+	background-color: #fff;
+	border: .05rem solid #fff;
+}
+
+/*
+ * Base structure
+ */
+html, body {
+	height: 100%;
+	background-color: #FFFFFF;
+}
+
+body {
+	display: -ms-flexbox;
+	display: flex;
+	color: #fff;
+}
+
+body.coverBg {
+	background-color: #333;
+	background-image: url("../images/beat_bg.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 1920px 1080px;
+	text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+	box-shadow: inset 0px 100px 20rem 20px rgba(0, 0, 0, 1);
+}
+
+/*
+ * Header
+ */
+.masthead {
+	margin-bottom: 2rem;
+}
+
+.masthead-brand {
+	margin-bottom: 0;
+}
+
+.logo {
+	max-width: 350px;
+}
+
+.logo-fp {
+	position: absolute;
+	max-width: 300px;
+	z-index: 2;
+	left: 0px;
+}
+
+.nav-masthead .nav-link {
+	padding: .25rem 0;
+	font-weight: 700;
+	color: rgba(255, 255, 255, .5);
+	background-color: transparent;
+	border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {
+	border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+	margin-left: 1rem;
+}
+
+.nav-masthead .active {
+	color: #fff;
+	border-bottom-color: #fff;
+}
+
+@media ( min-width : 48em) {
+	.masthead-brand {
+		float: left;
+	}
+	.nav-masthead {
+		float: right;
+	}
+}
+
+/*
+ * Cover
+ */
+.cover {
+	padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+	padding: .75rem 1.25rem;
+	font-weight: 700;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+	color: #FFFFFF;
+	margin-bottom: 50px;
+}
+
+.no-padding-left {
+	padding-left: 0px
+}
+
+.right-pane {
+	background-color: rgba(71, 80, 193);
+}
+
+.left-pane {
+	background-color: #FFFFFF;
+}
+
+.full-height {
+	height: 100%
+}
+
+.logo-fp-col {
+	min-height: 65px;
+}
+
+.floorPlan-header {
+	color: rgb(21, 175, 123);
+	background-color: white;
+	font-size: 42px;
+	font-family: fantasy;
+	margin-top: 35px;
+	margin-left: -15px;
+	padding: 15px;
+}
+
+.menu-container {
+	margin: 50px 0px;
+}
+
+.menu-container>.row {
+	margin: 20px 0px;
+}
+
+.floorMenu {
+	font-family: fantasy;
+	font-size: 1.5rem;
+	letter-spacing: 1.7px;
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+	border-radius: 2rem;
+}
+
+.btn.floorMenu:focus, .btn.floorMenu:hover {
+	border-color: transparent !important;
+	box-shadow: none !important;
+	background-color: rgb(21, 175, 123) !important;
+}
+
+.btn.floorMenu:active {
+	background-color: rgb(21, 175, 123) !important;
+}
+
+.floorMenu.active {
+	background-color: rgb(21, 175, 123) !important;
+	border-color: transparent !important;
+}
+
+.floorMenu.active:focus, .floorMenu.active:hover {
+	border-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.link-icon {
+	color: #ffe207;
+	position: absolute;
+	z-index: 3;
+	position: absolute;
+}
+
+.link-icon>a {
+	color: #ffe207;
+}
+
+/* Link icon */
+.garden-link-icon {
+	left: 500px;
+	top: 350px;
+	font-size: 1.5em;
+}
+
+.swimming-pool-link-icon {
+	left: 800px;
+	top: 480px;
+	font-size: 1.5em;
+}
+
+.co-working-link-icon {
+    left: 770px;
+    top: 405px;
+    font-size: 1.2em;
+}
+
+.lobby-pool-link-icon {
+	left: 850px;
+    top: 365px;
+	font-size: 1.2em;
+}
+
+.game-room-link-icon {
+	left: 730px;
+    top: 490px;
+	font-size: 1.2em;
+}
+
+.fitness-link-icon {
+    left: 850px;
+    top: 425px;
+	font-size: 1.2em;
+}
+
+.modal-lg.modal-facility {
+	max-width: 1200px
+}
+
+.modal-lg.modal-type {
+/* 	max-width: 1200px */
+}
+
+.display {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.icon-print{
+	top: 20px;
+	left: 20px;
+	font-size: 1.5em;
+}
+
+.icon-user{
+	top: 20px;
+	left: 100px;
+	font-size: 1.5em;
+}
+
+.link-icon.icon-print>a {
+	color: #555555 !important;
+}
+
+.link-icon.icon-user>a {
+	color: #555555 !important;
+}
+
+.reserved {
+	color: rgb(21, 175, 123);
+}
+
+@media print {
+  	body * {
+		visibility: hidden;
+	}
+	#section-to-print, #section-to-print * {
+		visibility: visible;
+	}
+	#mainContent {
+		display:none !important;
+	}
+	#section-to-print {
+		display:block;
+		width:100px;
+	}
+	#section-to-print>img {
+		width:950px;
+	}
+}

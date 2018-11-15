@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="/css/common.css" rel="stylesheet">
+<link href="/fontawesome/css/all.min.css" rel="stylesheet">
+<title>BEAT Condo</title>
+</head>
+<body class="text-center">
+	<div id="mainContent" class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+		<div class="container-fluid full-height">
+			<div class="row full-height">
+				<div class="col-md-8 left-pane">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12 logo-fp-col">
+								<img alt="logo" src="../images/logo_b.png" class="img-fluid logo-fp" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<img id="floorPlanImg" src="../images/floorPlan/mp.jpg" class="img-fluid" usemap="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 right-pane">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-9 floorPlan-header">FLOOR PLAN</div>
+							<div class="col-md-3"></div>
+						</div>
+						<div class="row floorMenu">
+							<div class="container-fluid menu-container">
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#" id="menu-mp" class="btn btn-primary btn-lg btn-block floorMenu active" data-floor="mp" role="button" aria-pressed="true">MASTER PLAN</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#" id="menu-f1" class="btn btn-primary btn-lg btn-block floorMenu" data-floor="f1" role="button" aria-pressed="true">1st FLOOR</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#" id="menu-f2" class="btn btn-primary btn-lg btn-block floorMenu" data-floor="f2" role="button" aria-pressed="true">2nd FLOOR</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#" id="menu-f3" class="btn btn-primary btn-lg btn-block floorMenu" data-floor="f3" role="button" aria-pressed="true">3rd FLOOR</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#" id="menu-f4" class="btn btn-primary btn-lg btn-block floorMenu" data-floor="f4" role="button" aria-pressed="true">4th FLOOR</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#" id="menu-f5" class="btn btn-primary btn-lg btn-block floorMenu" data-floor="f5" role="button" aria-pressed="true">5th FLOOR</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#l" id="menu-f6" class="btn btn-primary btn-lg btn-block floorMenu" data-floor="f6" role="button" aria-pressed="true">6th FLOOR</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#" id="menu-f7" class="btn btn-primary btn-lg btn-block floorMenu" data-floor="f7" role="button" aria-pressed="true">7th FLOOR</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 offset-md-3 text-md-center">
+										<a href="#l" id="menu-f8" class="btn btn-primary btn-lg btn-block floorMenu" data-floor="f8" role="button" aria-pressed="true">8th FLOOR</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="mpLinkMapped" class="container link-icon linkMapped">
+			<div class="row">
+				<div class="col-md-1 logo-fp-col">
+					<div class="garden-link-icon link-icon">
+						<a href="#garden" data-toggle="modal" data-target="#gardenModal">
+							<i class="fas fa-bullseye fa-1x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 logo-fp-col">
+					<div class="swimming-pool-link-icon link-icon">
+						<a href="#swimmingPool" data-toggle="modal" data-target="#poolModal">
+							<i class="fas fa-bullseye fa-1x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section-to-print" class="hide">
+		<img id="printImg" src="#">
+	</div>
+	
+	<div id="f1LinkMapped" class="container link-icon linkMapped hide">
+			<div class="row">
+				<div class="col-md-1 logo-fp-col">
+					<div class="co-working-link-icon link-icon">
+						<a href="#coworking" data-toggle="modal" data-target="#coworkingModal">
+							<i class="fas fa-bullseye fa-1x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 logo-fp-col">
+					<div class="lobby-pool-link-icon link-icon">
+						<a href="#lobby" data-toggle="modal" data-target="#lobbyModal">
+							<i class="fas fa-bullseye fa-1x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 logo-fp-col">
+					<div class="game-room-link-icon link-icon">
+						<a href="#gameRoom" data-toggle="modal" data-target="#gameRoomModal">
+							<i class="fas fa-bullseye fa-1x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 logo-fp-col">
+					<div class="fitness-link-icon link-icon">
+						<a href="#fitness" data-toggle="modal" data-target="#fitnessModal">
+							<i class="fas fa-bullseye fa-1x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="gardenModal" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered modal-facility" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<img src="../images/floorPlan/facility/garden.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="poolModal" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered modal-facility" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<img src="../images/floorPlan/facility/pool.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="coworkingModal" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered modal-facility" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<img src="../images/floorPlan/facility/coworking.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="lobbyModal" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered modal-facility" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<img src="../images/floorPlan/facility/lobby.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="gameRoomModal" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered modal-facility" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<img src="../images/floorPlan/facility/gameRoom.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="fitnessModal" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered modal-facility" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<img src="../images/floorPlan/facility/fitness.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="roomTypeModal" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalCenterTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered modal-type" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container link-icon">
+						<div class="row">
+							<div class="col-md-1">
+								<div class="link-icon icon-print">
+									<a id="printType" href="#">
+										<i class="fas fa-print fa-2x"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-1">
+								<div class="link-icon icon-user">
+									<a href="#">
+										<i id="reservedIcon" class="far fa-user fa-2x"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img id="roomTypeImg" src="../images/floorPlan/facility/fitness.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<map name="f1FloorPlanMap">
+	    <area class="roomTypeArea" href="#B1A01" data-type="BA01" data-building="B" data-floor="1" coords="970,320,1028,320,1028,380,970,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A02" data-type="BA02" data-building="B" data-floor="1" coords="1048,320,1108,320,1108,380,1048,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A03" data-type="BA03" data-building="B" data-floor="1" coords="1048,380,1108,380,1108,439,1048,439" shape="poly">
+	    <area class="roomTypeArea" href="#B1A04" data-type="BA04" data-building="B" data-floor="1" coords="1048,439,1108,439,1108,498,1048,498" shape="poly">
+	    <area class="roomTypeArea" href="#B1A05" data-type="BA05" data-building="B" data-floor="1" coords="1048,499,1108,499,1108,558,1048,558" shape="poly">
+	    <area class="roomTypeArea" href="#B1A06" data-type="BA06" data-building="B" data-floor="1" coords="1048,559,1108,559,1108,617,1048,617" shape="poly">
+	    <area class="roomTypeArea" href="#B1A07" data-type="BA07" data-building="B" data-floor="1" coords="1048,618,1108,618,1108,676,1048,676" shape="poly">
+	    <area class="roomTypeArea" href="#B1A08" data-type="BA08" data-building="B" data-floor="1" coords="1048,676,1108,676,1108,736,1048,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1B09" data-type="BB09" data-building="B" data-floor="1" coords="1028,737,1108,737,1108,806,1028,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A10" data-type="BA10" data-building="B" data-floor="1" coords="973,747,1028,747,1028,806,973,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A11" data-type="BA11" data-building="B" data-floor="1" coords="913,747,972,747,972,806,913,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A12" data-type="BA12" data-building="B" data-floor="1" coords="823,747,878,747,878,806,823,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A13" data-type="BA13" data-building="B" data-floor="1" coords="756,747,823,747,823,806,756,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C14" data-type="BC14" data-building="B" data-floor="1" coords="669,738,753,738,753,806,669,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C15" data-type="BC15" data-building="B" data-floor="1" coords="669,667,753,667,753,736,669,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1A16" data-type="BA16" data-building="B" data-floor="1" coords="756,667,823,667,823,726,756,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A17" data-type="BA17" data-building="B" data-floor="1" coords="823,667,878,667,878,726,823,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A18" data-type="BA18" data-building="B" data-floor="1" coords="878,667,960,667,960,726,878,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A19" data-type="BA19" data-building="B" data-floor="1" coords="960,667,1028,667,1028,726,960,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A20" data-type="BA20" data-building="B" data-floor="1" coords="970,610,1030,610,1030,667,970,667" shape="poly">
+	    <area class="roomTypeArea" href="#B1A21" data-type="BA21" data-building="B" data-floor="1" coords="970,550,1030,550,1030,607,970,607" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="1" coords="970,490,1030,490,1030,547,970,547" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="1" coords="970,430,1030,430,1030,487,970,487" shape="poly">
+	</map>
+	
+	<map name="f2FloorPlanMap">
+	    <area class="roomTypeArea" href="#B1A01" data-type="BA01" data-building="B" data-floor="2" coords="970,320,1028,320,1028,380,970,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A02" data-type="BA02" data-building="B" data-floor="2" coords="1048,320,1108,320,1108,380,1048,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A03" data-type="BA03" data-building="B" data-floor="2" coords="1048,380,1108,380,1108,439,1048,439" shape="poly">
+	    <area class="roomTypeArea" href="#B1A04" data-type="BA04" data-building="B" data-floor="2" coords="1048,439,1108,439,1108,498,1048,498" shape="poly">
+	    <area class="roomTypeArea" href="#B1A05" data-type="BA05" data-building="B" data-floor="2" coords="1048,499,1108,499,1108,558,1048,558" shape="poly">
+	    <area class="roomTypeArea" href="#B1A06" data-type="BA06" data-building="B" data-floor="2" coords="1048,559,1108,559,1108,617,1048,617" shape="poly">
+	    <area class="roomTypeArea" href="#B1A07" data-type="BA07" data-building="B" data-floor="2" coords="1048,618,1108,618,1108,676,1048,676" shape="poly">
+	    <area class="roomTypeArea" href="#B1A08" data-type="BA08" data-building="B" data-floor="2" coords="1048,676,1108,676,1108,736,1048,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1B09" data-type="BB09" data-building="B" data-floor="2" coords="1028,737,1108,737,1108,806,1028,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A10" data-type="BA10" data-building="B" data-floor="2" coords="973,747,1028,747,1028,806,973,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A11" data-type="BA11" data-building="B" data-floor="2" coords="913,747,972,747,972,806,913,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A12" data-type="BA12" data-building="B" data-floor="2" coords="823,747,878,747,878,806,823,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A13" data-type="BA13" data-building="B" data-floor="2" coords="756,747,823,747,823,806,756,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C14" data-type="BC14" data-building="B" data-floor="2" coords="669,738,753,738,753,806,669,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C15" data-type="BC15" data-building="B" data-floor="2" coords="669,667,753,667,753,736,669,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1A16" data-type="BA16" data-building="B" data-floor="2" coords="756,667,823,667,823,726,756,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A17" data-type="BA17" data-building="B" data-floor="2" coords="823,667,878,667,878,726,823,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A18" data-type="BA18" data-building="B" data-floor="2" coords="878,667,960,667,960,726,878,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A19" data-type="BA19" data-building="B" data-floor="2" coords="960,667,1028,667,1028,726,960,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A20" data-type="BA20" data-building="B" data-floor="2" coords="970,610,1030,610,1030,667,970,667" shape="poly">
+	    <area class="roomTypeArea" href="#B1A21" data-type="BA21" data-building="B" data-floor="2" coords="970,550,1030,550,1030,607,970,607" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="2" coords="970,490,1030,490,1030,547,970,547" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="2" coords="970,430,1030,430,1030,487,970,487" shape="poly">
+	</map>
+	
+	<map name="f3FloorPlanMap">
+	    <area class="roomTypeArea" href="#B1A01" data-type="BA01" data-building="B" data-floor="3" coords="970,320,1028,320,1028,380,970,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A02" data-type="BA02" data-building="B" data-floor="3" coords="1048,320,1108,320,1108,380,1048,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A03" data-type="BA03" data-building="B" data-floor="3" coords="1048,380,1108,380,1108,439,1048,439" shape="poly">
+	    <area class="roomTypeArea" href="#B1A04" data-type="BA04" data-building="B" data-floor="3" coords="1048,439,1108,439,1108,498,1048,498" shape="poly">
+	    <area class="roomTypeArea" href="#B1A05" data-type="BA05" data-building="B" data-floor="3" coords="1048,499,1108,499,1108,558,1048,558" shape="poly">
+	    <area class="roomTypeArea" href="#B1A06" data-type="BA06" data-building="B" data-floor="3" coords="1048,559,1108,559,1108,617,1048,617" shape="poly">
+	    <area class="roomTypeArea" href="#B1A07" data-type="BA07" data-building="B" data-floor="3" coords="1048,618,1108,618,1108,676,1048,676" shape="poly">
+	    <area class="roomTypeArea" href="#B1A08" data-type="BA08" data-building="B" data-floor="3" coords="1048,676,1108,676,1108,736,1048,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1B09" data-type="BB09" data-building="B" data-floor="3" coords="1028,737,1108,737,1108,806,1028,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A10" data-type="BA10" data-building="B" data-floor="3" coords="973,747,1028,747,1028,806,973,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A11" data-type="BA11" data-building="B" data-floor="3" coords="913,747,972,747,972,806,913,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A12" data-type="BA12" data-building="B" data-floor="3" coords="823,747,878,747,878,806,823,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A13" data-type="BA13" data-building="B" data-floor="3" coords="756,747,823,747,823,806,756,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C14" data-type="BC14" data-building="B" data-floor="3" coords="669,738,753,738,753,806,669,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C15" data-type="BC15" data-building="B" data-floor="3" coords="669,667,753,667,753,736,669,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1A16" data-type="BA16" data-building="B" data-floor="3" coords="756,667,823,667,823,726,756,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A17" data-type="BA17" data-building="B" data-floor="3" coords="823,667,878,667,878,726,823,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A18" data-type="BA18" data-building="B" data-floor="3" coords="878,667,960,667,960,726,878,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A19" data-type="BA19" data-building="B" data-floor="3" coords="960,667,1028,667,1028,726,960,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A20" data-type="BA20" data-building="B" data-floor="3" coords="970,610,1030,610,1030,667,970,667" shape="poly">
+	    <area class="roomTypeArea" href="#B1A21" data-type="BA21" data-building="B" data-floor="3" coords="970,550,1030,550,1030,607,970,607" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="3" coords="970,490,1030,490,1030,547,970,547" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="3" coords="970,430,1030,430,1030,487,970,487" shape="poly">
+	</map>
+	
+	<map name="f4FloorPlanMap">
+	    <area class="roomTypeArea" href="#B1A01" data-type="BA01" data-building="B" data-floor="4" coords="970,320,1028,320,1028,380,970,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A02" data-type="BA02" data-building="B" data-floor="4" coords="1048,320,1108,320,1108,380,1048,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A03" data-type="BA03" data-building="B" data-floor="4" coords="1048,380,1108,380,1108,439,1048,439" shape="poly">
+	    <area class="roomTypeArea" href="#B1A04" data-type="BA04" data-building="B" data-floor="4" coords="1048,439,1108,439,1108,498,1048,498" shape="poly">
+	    <area class="roomTypeArea" href="#B1A05" data-type="BA05" data-building="B" data-floor="4" coords="1048,499,1108,499,1108,558,1048,558" shape="poly">
+	    <area class="roomTypeArea" href="#B1A06" data-type="BA06" data-building="B" data-floor="4" coords="1048,559,1108,559,1108,617,1048,617" shape="poly">
+	    <area class="roomTypeArea" href="#B1A07" data-type="BA07" data-building="B" data-floor="4" coords="1048,618,1108,618,1108,676,1048,676" shape="poly">
+	    <area class="roomTypeArea" href="#B1A08" data-type="BA08" data-building="B" data-floor="4" coords="1048,676,1108,676,1108,736,1048,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1B09" data-type="BB09" data-building="B" data-floor="4" coords="1028,737,1108,737,1108,806,1028,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A10" data-type="BA10" data-building="B" data-floor="4" coords="973,747,1028,747,1028,806,973,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A11" data-type="BA11" data-building="B" data-floor="4" coords="913,747,972,747,972,806,913,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A12" data-type="BA12" data-building="B" data-floor="4" coords="823,747,878,747,878,806,823,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A13" data-type="BA13" data-building="B" data-floor="4" coords="756,747,823,747,823,806,756,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C14" data-type="BC14" data-building="B" data-floor="4" coords="669,738,753,738,753,806,669,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C15" data-type="BC15" data-building="B" data-floor="4" coords="669,667,753,667,753,736,669,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1A16" data-type="BA16" data-building="B" data-floor="4" coords="756,667,823,667,823,726,756,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A17" data-type="BA17" data-building="B" data-floor="4" coords="823,667,878,667,878,726,823,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A18" data-type="BA18" data-building="B" data-floor="4" coords="878,667,960,667,960,726,878,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A19" data-type="BA19" data-building="B" data-floor="4" coords="960,667,1028,667,1028,726,960,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A20" data-type="BA20" data-building="B" data-floor="4" coords="970,610,1030,610,1030,667,970,667" shape="poly">
+	    <area class="roomTypeArea" href="#B1A21" data-type="BA21" data-building="B" data-floor="4" coords="970,550,1030,550,1030,607,970,607" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="4" coords="970,490,1030,490,1030,547,970,547" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="4" coords="970,430,1030,430,1030,487,970,487" shape="poly">
+	</map>
+	
+	<map name="f5FloorPlanMap">
+	    <area class="roomTypeArea" href="#B1A01" data-type="BA01" data-building="B" data-floor="5" coords="970,320,1028,320,1028,380,970,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A02" data-type="BA02" data-building="B" data-floor="5" coords="1048,320,1108,320,1108,380,1048,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A03" data-type="BA03" data-building="B" data-floor="5" coords="1048,380,1108,380,1108,439,1048,439" shape="poly">
+	    <area class="roomTypeArea" href="#B1A04" data-type="BA04" data-building="B" data-floor="5" coords="1048,439,1108,439,1108,498,1048,498" shape="poly">
+	    <area class="roomTypeArea" href="#B1A05" data-type="BA05" data-building="B" data-floor="5" coords="1048,499,1108,499,1108,558,1048,558" shape="poly">
+	    <area class="roomTypeArea" href="#B1A06" data-type="BA06" data-building="B" data-floor="5" coords="1048,559,1108,559,1108,617,1048,617" shape="poly">
+	    <area class="roomTypeArea" href="#B1A07" data-type="BA07" data-building="B" data-floor="5" coords="1048,618,1108,618,1108,676,1048,676" shape="poly">
+	    <area class="roomTypeArea" href="#B1A08" data-type="BA08" data-building="B" data-floor="5" coords="1048,676,1108,676,1108,736,1048,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1B09" data-type="BB09" data-building="B" data-floor="5" coords="1028,737,1108,737,1108,806,1028,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A10" data-type="BA10" data-building="B" data-floor="5" coords="973,747,1028,747,1028,806,973,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A11" data-type="BA11" data-building="B" data-floor="5" coords="913,747,972,747,972,806,913,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A12" data-type="BA12" data-building="B" data-floor="5" coords="823,747,878,747,878,806,823,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A13" data-type="BA13" data-building="B" data-floor="5" coords="756,747,823,747,823,806,756,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C14" data-type="BC14" data-building="B" data-floor="5" coords="669,738,753,738,753,806,669,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C15" data-type="BC15" data-building="B" data-floor="5" coords="669,667,753,667,753,736,669,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1A16" data-type="BA16" data-building="B" data-floor="5" coords="756,667,823,667,823,726,756,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A17" data-type="BA17" data-building="B" data-floor="5" coords="823,667,878,667,878,726,823,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A18" data-type="BA18" data-building="B" data-floor="5" coords="878,667,960,667,960,726,878,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A19" data-type="BA19" data-building="B" data-floor="5" coords="960,667,1028,667,1028,726,960,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A20" data-type="BA20" data-building="B" data-floor="5" coords="970,610,1030,610,1030,667,970,667" shape="poly">
+	    <area class="roomTypeArea" href="#B1A21" data-type="BA21" data-building="B" data-floor="5" coords="970,550,1030,550,1030,607,970,607" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="5" coords="970,490,1030,490,1030,547,970,547" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="5" coords="970,430,1030,430,1030,487,970,487" shape="poly">
+	</map>
+	
+	<map name="f6FloorPlanMap">
+	    <area class="roomTypeArea" href="#B1A01" data-type="BA01" data-building="B" data-floor="6" coords="970,320,1028,320,1028,380,970,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A02" data-type="BA02" data-building="B" data-floor="6" coords="1048,320,1108,320,1108,380,1048,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A03" data-type="BA03" data-building="B" data-floor="6" coords="1048,380,1108,380,1108,439,1048,439" shape="poly">
+	    <area class="roomTypeArea" href="#B1A04" data-type="BA04" data-building="B" data-floor="6" coords="1048,439,1108,439,1108,498,1048,498" shape="poly">
+	    <area class="roomTypeArea" href="#B1A05" data-type="BA05" data-building="B" data-floor="6" coords="1048,499,1108,499,1108,558,1048,558" shape="poly">
+	    <area class="roomTypeArea" href="#B1A06" data-type="BA06" data-building="B" data-floor="6" coords="1048,559,1108,559,1108,617,1048,617" shape="poly">
+	    <area class="roomTypeArea" href="#B1A07" data-type="BA07" data-building="B" data-floor="6" coords="1048,618,1108,618,1108,676,1048,676" shape="poly">
+	    <area class="roomTypeArea" href="#B1A08" data-type="BA08" data-building="B" data-floor="6" coords="1048,676,1108,676,1108,736,1048,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1B09" data-type="BB09" data-building="B" data-floor="6" coords="1028,737,1108,737,1108,806,1028,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A10" data-type="BA10" data-building="B" data-floor="6" coords="973,747,1028,747,1028,806,973,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A11" data-type="BA11" data-building="B" data-floor="6" coords="913,747,972,747,972,806,913,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A12" data-type="BA12" data-building="B" data-floor="6" coords="823,747,878,747,878,806,823,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A13" data-type="BA13" data-building="B" data-floor="6" coords="756,747,823,747,823,806,756,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C14" data-type="BC14" data-building="B" data-floor="6" coords="669,738,753,738,753,806,669,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C15" data-type="BC15" data-building="B" data-floor="6" coords="669,667,753,667,753,736,669,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1A16" data-type="BA16" data-building="B" data-floor="6" coords="756,667,823,667,823,726,756,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A17" data-type="BA17" data-building="B" data-floor="6" coords="823,667,878,667,878,726,823,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A18" data-type="BA18" data-building="B" data-floor="6" coords="878,667,960,667,960,726,878,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A19" data-type="BA19" data-building="B" data-floor="6" coords="960,667,1028,667,1028,726,960,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A20" data-type="BA20" data-building="B" data-floor="6" coords="970,610,1030,610,1030,667,970,667" shape="poly">
+	    <area class="roomTypeArea" href="#B1A21" data-type="BA21" data-building="B" data-floor="6" coords="970,550,1030,550,1030,607,970,607" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="6" coords="970,490,1030,490,1030,547,970,547" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="6" coords="970,430,1030,430,1030,487,970,487" shape="poly">
+	</map>
+	
+	<map name="f7FloorPlanMap">
+	    <area class="roomTypeArea" href="#B1A01" data-type="BA01" data-building="B" data-floor="7" coords="970,320,1028,320,1028,380,970,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A02" data-type="BA02" data-building="B" data-floor="7" coords="1048,320,1108,320,1108,380,1048,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A03" data-type="BA03" data-building="B" data-floor="7" coords="1048,380,1108,380,1108,439,1048,439" shape="poly">
+	    <area class="roomTypeArea" href="#B1A04" data-type="BA04" data-building="B" data-floor="7" coords="1048,439,1108,439,1108,498,1048,498" shape="poly">
+	    <area class="roomTypeArea" href="#B1A05" data-type="BA05" data-building="B" data-floor="7" coords="1048,499,1108,499,1108,558,1048,558" shape="poly">
+	    <area class="roomTypeArea" href="#B1A06" data-type="BA06" data-building="B" data-floor="7" coords="1048,559,1108,559,1108,617,1048,617" shape="poly">
+	    <area class="roomTypeArea" href="#B1A07" data-type="BA07" data-building="B" data-floor="7" coords="1048,618,1108,618,1108,676,1048,676" shape="poly">
+	    <area class="roomTypeArea" href="#B1A08" data-type="BA08" data-building="B" data-floor="7" coords="1048,676,1108,676,1108,736,1048,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1B09" data-type="BB09" data-building="B" data-floor="7" coords="1028,737,1108,737,1108,806,1028,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A10" data-type="BA10" data-building="B" data-floor="7" coords="973,747,1028,747,1028,806,973,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A11" data-type="BA11" data-building="B" data-floor="7" coords="913,747,972,747,972,806,913,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A12" data-type="BA12" data-building="B" data-floor="7" coords="823,747,878,747,878,806,823,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A13" data-type="BA13" data-building="B" data-floor="7" coords="756,747,823,747,823,806,756,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C14" data-type="BC14" data-building="B" data-floor="7" coords="669,738,753,738,753,806,669,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C15" data-type="BC15" data-building="B" data-floor="7" coords="669,667,753,667,753,736,669,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1A16" data-type="BA16" data-building="B" data-floor="7" coords="756,667,823,667,823,726,756,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A17" data-type="BA17" data-building="B" data-floor="7" coords="823,667,878,667,878,726,823,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A18" data-type="BA18" data-building="B" data-floor="7" coords="878,667,960,667,960,726,878,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A19" data-type="BA19" data-building="B" data-floor="7" coords="960,667,1028,667,1028,726,960,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A20" data-type="BA20" data-building="B" data-floor="7" coords="970,610,1030,610,1030,667,970,667" shape="poly">
+	    <area class="roomTypeArea" href="#B1A21" data-type="BA21" data-building="B" data-floor="7" coords="970,550,1030,550,1030,607,970,607" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="7" coords="970,490,1030,490,1030,547,970,547" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="7" coords="970,430,1030,430,1030,487,970,487" shape="poly">
+	</map>
+	
+	<map name="f8FloorPlanMap">
+	    <area class="roomTypeArea" href="#B1A01" data-type="BA01" data-building="B" data-floor="8" coords="970,320,1028,320,1028,380,970,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A02" data-type="BA02" data-building="B" data-floor="8" coords="1048,320,1108,320,1108,380,1048,380" shape="poly">
+	    <area class="roomTypeArea" href="#B1A03" data-type="BA03" data-building="B" data-floor="8" coords="1048,380,1108,380,1108,439,1048,439" shape="poly">
+	    <area class="roomTypeArea" href="#B1A04" data-type="BA04" data-building="B" data-floor="8" coords="1048,439,1108,439,1108,498,1048,498" shape="poly">
+	    <area class="roomTypeArea" href="#B1A05" data-type="BA05" data-building="B" data-floor="8" coords="1048,499,1108,499,1108,558,1048,558" shape="poly">
+	    <area class="roomTypeArea" href="#B1A06" data-type="BA06" data-building="B" data-floor="8" coords="1048,559,1108,559,1108,617,1048,617" shape="poly">
+	    <area class="roomTypeArea" href="#B1A07" data-type="BA07" data-building="B" data-floor="8" coords="1048,618,1108,618,1108,676,1048,676" shape="poly">
+	    <area class="roomTypeArea" href="#B1A08" data-type="BA08" data-building="B" data-floor="8" coords="1048,676,1108,676,1108,736,1048,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1B09" data-type="BB09" data-building="B" data-floor="8" coords="1028,737,1108,737,1108,806,1028,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A10" data-type="BA10" data-building="B" data-floor="8" coords="973,747,1028,747,1028,806,973,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A11" data-type="BA11" data-building="B" data-floor="8" coords="913,747,972,747,972,806,913,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A12" data-type="BA12" data-building="B" data-floor="8" coords="823,747,878,747,878,806,823,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1A13" data-type="BA13" data-building="B" data-floor="8" coords="756,747,823,747,823,806,756,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C14" data-type="BC14" data-building="B" data-floor="8" coords="669,738,753,738,753,806,669,806" shape="poly">
+	    <area class="roomTypeArea" href="#B1C15" data-type="BC15" data-building="B" data-floor="8" coords="669,667,753,667,753,736,669,736" shape="poly">
+	    <area class="roomTypeArea" href="#B1A16" data-type="BA16" data-building="B" data-floor="8" coords="756,667,823,667,823,726,756,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A17" data-type="BA17" data-building="B" data-floor="8" coords="823,667,878,667,878,726,823,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A18" data-type="BA18" data-building="B" data-floor="8" coords="878,667,960,667,960,726,878,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A19" data-type="BA19" data-building="B" data-floor="8" coords="960,667,1028,667,1028,726,960,726" shape="poly">
+	    <area class="roomTypeArea" href="#B1A20" data-type="BA20" data-building="B" data-floor="8" coords="970,610,1030,610,1030,667,970,667" shape="poly">
+	    <area class="roomTypeArea" href="#B1A21" data-type="BA21" data-building="B" data-floor="8" coords="970,550,1030,550,1030,607,970,607" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="8" coords="970,490,1030,490,1030,547,970,547" shape="poly">
+	    <area class="roomTypeArea" href="#B1A22" data-type="BA22" data-building="B" data-floor="8" coords="970,430,1030,430,1030,487,970,487" shape="poly">
+	</map>
+	
+	<script src="/webjars/jquery/3.0.0/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+	<script>
+		var floorMenu = $('.btn.floorMenu');
+		var roomTypeArea = $('.roomTypeArea');
+		var printType = $('#printType');
+		var reservedIcon = $('#reservedIcon');
+		var roomTypeImg = $('#roomTypeImg');
+		var printImg = $('#printImg');
+		
+		$(document).ready(function() {
+		    floorMenu.click(function() {
+				var floor = $(this).data("floor");
+				floorMenu.removeClass('active');
+				$('#menu-'+floor).addClass('active');
+			  	$('#floorPlanImg').attr('src','../images/floorPlan/'+floor+'.jpg');
+			  	
+			  	activateLink(floor);
+			});
+			
+			roomTypeArea.click(function(){
+				var building = $(this).data('building');
+				var floor = $(this).data('floor');
+				var type = $(this).data('type');
+				
+				roomTypeImg.attr('src','../images/floorPlan/'+building+'/'+type+'.jpg');
+				printImg.attr('src','../images/floorPlan/'+building+'/'+type+'.jpg');
+				
+				setReservedIcon(building, floor, type);
+				
+				$('#roomTypeModal').modal('toggle');
+			});
+			
+			printType.click(function(){
+				$('#roomTypeModal').modal('toggle');
+				window.print();
+			});
+			
+			reservedIcon.click(function(){
+				var building = $(this).data('building');
+				var floor = $(this).data('floor');
+				var type = $(this).data('type');
+				var localStorageKey = building + '-' + floor + '-' + type;
+				
+				var reserved = getReserved(localStorageKey);
+				if (reserved !== null && reserved === "true") {
+					removeReserved(localStorageKey);
+				}
+				else{
+					setReserved(localStorageKey);
+				}
+			});
+		});
+		
+		function setReservedIcon(building, floor, type) {
+			var localStorageKey = building + '-' + floor + '-' + type;
+			var reserved = getReserved(localStorageKey);
+
+			if (reserved !== null && reserved === "true") {
+				setReserved(localStorageKey);
+			} else {
+				removeReserved(localStorageKey);
+			}
+			
+			reservedIcon.attr('data-building', building);
+			reservedIcon.attr('data-floor', floor);
+			reservedIcon.attr('data-type', type);
+		}
+		
+		function setReserved(localStorageKey){
+			localStorage.setItem(localStorageKey, "true");
+			reservedIcon.removeClass("far").addClass("fas").addClass("reserved");
+		}
+		
+		function removeReserved(localStorageKey){
+			localStorage.setItem(localStorageKey, "false");
+			reservedIcon.removeClass("reserved").removeClass("fas").addClass("far");
+		}
+		
+		function getReserved(localStorageKey){
+			return localStorage.getItem(localStorageKey);
+		}
+
+		function activateLink(floor) {
+			$('.linkMapped').hide();
+			$('#' + floor + 'LinkMapped').show(100);
+			$('#floorPlanImg').attr('usemap', '#' + floor + 'FloorPlanMap');
+		}
+	</script>
+</body>
+</html>
