@@ -178,7 +178,6 @@ body.coverBg {
 }
 
 .link-icon {
-	color: #ffe207;
 	position: absolute;
 	z-index: 3;
 	position: absolute;
@@ -223,6 +222,33 @@ body.coverBg {
     left: 850px;
     top: 425px;
 	font-size: 1.2em;
+}
+
+/*----Reserved link icons------*/
+.reserved-link-icon {
+	color: red;
+	font-size:1em;
+}
+
+.reserved-link-icon.type-a01{
+	left: 1100px;
+    top: 160px;
+}
+
+.reserved-link-icon.type-a02{
+	left: 1100px;
+    top: 160px;
+}
+
+
+.reserved-link-icon.type-a03{
+	left: 1100px;
+    top: 160px;
+}
+
+.reserved-link-icon.type-a33{
+	left: 1100px;
+    top: 290px;
 }
 
 .modal-lg.modal-facility {

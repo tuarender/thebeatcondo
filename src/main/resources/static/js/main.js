@@ -12,7 +12,6 @@ $(document).ready(function() {
 
 		$(".floorPlanImg").fadeOut(0);
 		$("#floorPlanImg"+floor).fadeIn(200)
-	  	
 	  	activateLink(floor);
 	});
 	
@@ -37,6 +36,6 @@ $(document).ready(function() {
 
 function activateLink(floor) {
 	$('.linkMapped').hide();
-	$('#' + floor + 'LinkMapped').show(100);
+	$('#' + floor + 'LinkMapped').fadeIn(200);
 	$('#floorPlanImg').attr('usemap', '#' + floor + 'FloorPlanMap');
 }
