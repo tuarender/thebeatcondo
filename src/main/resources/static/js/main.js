@@ -9,7 +9,10 @@ $(document).ready(function() {
 		var floor = this.dataset.floor;
 		floorMenu.removeClass('active');
 		$('#menu-'+floor).addClass('active');
-	  	$('#floorPlanImg').attr('src','../images/floorPlan/'+floor+'.jpg');
+		
+		$("#floorPlanImg").fadeOut(200, function() {
+            $("#floorPlanImg").attr('src','../images/floorPlan/'+floor+'.jpg');
+        }).fadeIn(200);
 	  	
 	  	activateLink(floor);
 	});
