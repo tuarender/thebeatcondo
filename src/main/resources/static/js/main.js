@@ -19,7 +19,7 @@ $(document).ready(function() {
 		var building = this.dataset.building;
 		var floor = this.dataset.floor;
 		var type = this.dataset.type;
-		var price = this.dataset.type;
+		var price = this.dataset.price;
 		
 		roomTypeImg.attr('src','../images/floorPlan/'+building+'/'+type+'.jpg');
 		printImg.attr('src','../images/floorPlan/'+building+'/'+type+'.jpg');
