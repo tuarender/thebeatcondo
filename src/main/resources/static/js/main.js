@@ -1,8 +1,10 @@
 var floorMenu = $('.btn.floorMenu');
 var roomTypeArea = $('.roomTypeArea');
 var printType = $('#printType');
+var priceSpan = $('#price');
 var roomTypeImg = $('#roomTypeImg');
 var printImg = $('#printImg');
+var printPrice = $('#printPrice');
 
 $(document).ready(function() {
     floorMenu.click(function() {
@@ -23,7 +25,8 @@ $(document).ready(function() {
 		
 		roomTypeImg.attr('src','../images/floorPlan/'+building+'/'+type+'.jpg');
 		printImg.attr('src','../images/floorPlan/'+building+'/'+type+'.jpg');
-		$('#price').html(price);
+		priceSpan.html(price);
+		printPrice.html(price);
 	
 		$('#roomTypeModal').modal('toggle');
 	});
