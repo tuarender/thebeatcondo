@@ -264,6 +264,15 @@ body.coverBg {
 	color: rgb(21, 175, 123);
 }
 
+.price {
+	top: 80px;
+    left: 25px;
+    text-align: left;
+    color: #555555;
+    font-size: 28px;
+    font-weight: bold;
+}
+
 @media print {
   	body * {
 		visibility: hidden;
