@@ -381,9 +381,54 @@ body.coverBg {
 	top: 460px;
 }
 
+.reserved-link-icon.type-a04 {
+	left: 1100px;
+	top: 517px;
+}
+
+.reserved-link-icon.type-a05 {
+	left: 1100px;
+	top: 577px;
+}
+
+.reserved-link-icon.type-a06 {
+	left: 1100px;
+	top: 640px;
+}
+
+.reserved-link-icon.type-a07 {
+	left: 1100px;
+	top: 697px;
+}
+
+.reserved-link-icon.type-a08 {
+	left: 1100px;
+	top: 752px;
+}
+
 .reserved-link-icon.type-b09 {
 	left: 1095px;
 	top: 820px;
+}
+
+.reserved-link-icon.type-a10 {
+	left: 1018px;
+	top: 833px;
+}
+
+.reserved-link-icon.type-a11 {
+	left: 960px;
+	top: 833px;
+}
+
+.reserved-link-icon.type-a12 {
+	left: 875px;
+	top: 833px;
+}
+
+.reserved-link-icon.type-a13 {
+	left: 810px;
+	top: 833px;
 }
 
 .reserved-link-icon.type-c14 {
@@ -441,9 +486,59 @@ body.coverBg {
 	top: 335px;
 }
 
+.reserved-link-icon.type-a25 {
+	left: 971px;
+	top: 253px;
+}
+
+.reserved-link-icon.type-a26 {
+	left: 907px;
+	top: 263px;
+}
+
+.reserved-link-icon.type-c27 {
+	left: 830px;
+	top: 258px;
+}
+
+.reserved-link-icon.type-c28 {
+	left: 828px;
+	top: 188px;
+}
+
+.reserved-link-icon.type-a29 {
+	left: 905px;
+	top: 179px;
+}
+
+.reserved-link-icon.type-a30 {
+	left: 967px;
+	top: 175px;
+}
+
+.reserved-link-icon.type-a31 {
+	left: 967px;
+	top: 175px;
+}
+
+.reserved-link-icon.type-a32 {
+	left: 1100px;
+	top: 165px;
+}
+
 .reserved-link-icon.type-a33 {
 	left: 1100px;
 	top: 225px;
+}
+
+.reserved-link-icon.type-a34 {
+	left: 1100px;
+	top: 282px;
+}
+
+.reserved-link-icon.type-a35 {
+	left: 1100px;
+	top: 343px;
 }
 
 .modal-lg.modal-facility {
